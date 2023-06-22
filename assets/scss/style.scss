@@ -1,0 +1,18 @@
+@import url('null.scss');
+@import url('media.scss');
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700&family=Manrope:wght@700&display=swap');
+
+$primary-color: #EE8313;
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+[class*="__container"]{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
