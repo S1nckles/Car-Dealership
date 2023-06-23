@@ -1,5 +1,4 @@
-@import url('null.scss');
-@import url('media.scss');
+@import url('null.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700&family=Manrope:wght@700&display=swap');
 
@@ -9,10 +8,77 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
     color: #fff;
+    background: #000;
 }
 
 [class*="__container"]{
     max-width: 1470px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+//-- Hero -------------------------------------
+
+.hero {
+    width: 100%;
+    .hero__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0;
+
+        .header__logo {
+            z-index: 100;
+        }
+        .header__burger {
+            display: none;
+            padding: 9px 2px;
+    
+            background: none;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-right: 105px;
+    .nav__links {
+        display: flex;
+        align-items: center;
+        column-gap: 48px;
+        margin-right: 72px;
+
+        .nav__link a{
+            color: #FFF;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.16px;
+
+            text-decoration: none;
+            transition: color 0.5s ease;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    .btn {
+        padding: 12px 24px;
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        transition: all 0.5s ease;
+        
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+    
+        &:hover {
+            background-color: $primary-color;
+            color: #FFF;
+        }
+    }
+    
 }
