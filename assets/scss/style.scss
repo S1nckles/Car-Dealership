@@ -4,7 +4,11 @@
 
 $primary-color: #EE8313;
 
+html {
+    overflow: hidden;
+}
 body {
+    overflow-x: hidden;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
     color: #fff;
@@ -21,11 +25,16 @@ body {
 
 .hero {
     width: 100%;
+    margin-bottom: 60px;
     .hero__header {
+        min-width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 40px 0;
+        padding: 40px 15px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
 
         .header__logo {
             z-index: 100;
@@ -38,6 +47,16 @@ body {
             border: 0;
             cursor: pointer;
         }
+    }
+    .hero__header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color:rgba(0, 0, 0, 0.7)
     }
 }
 
@@ -64,21 +83,103 @@ body {
             }
         }
     }
-    .btn {
-        padding: 12px 24px;
-        background-color: transparent;
-        border: 1px solid $primary-color;
-        color: $primary-color;
-        transition: all 0.5s ease;
-        
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0.16px;
+}
+.btn {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    transition: all 0.5s ease;
     
-        &:hover {
-            background-color: $primary-color;
-            color: #FFF;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #FFF;
+    }
+}
+
+.hero__hero {
+    display: flex;
+    margin-top: 195px;
+
+
+    .hero__content {
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        justify-items: flex-start;
+        
+
+        .hero__title {
+            max-width: 591px;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: 0.312px;
+        }
+        .hero__subtitle {
+            max-width: 451px;
+            margin-top: 32px;
+            font-size: 17px;
+            line-height: 28px;
+            letter-spacing: -0.408px;
+            opacity: 0.8;
+        }
+        .hero__block-btn {
+            max-width: 591px;
+            margin-top: 48px;
+
+            display: flex;
+            gap: 35px;
+        }
+        .hero__statistics {
+            max-width: 591px;
+            display: flex;
+            margin-top: 40px;
+            gap: 40px;
+
+            .hero__top {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                gap: 16px;
+
+                .hero__top-num {
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 33px;
+                    letter-spacing: -0.164px;
+                }
+                .hero__top-text {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.16px;
+                }
+            }
         }
     }
-    
+    .hero__img {
+        display: flex;
+        flex: 1 1 50%;
+        position: relative;
+        .hero__img-fon {
+            position: absolute;
+            right: -214px;
+            left: 0;
+            top: 0;
+            bottom: -138px;
+            z-index: -1;
+            background-color: rgba(34, 33, 33, 0.584);
+        }
+        & img {
+            position: absolute;
+            top: 46px;
+            right: -15px;
+            bottom: 60px;
+        }
+    }
 }
