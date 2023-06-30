@@ -251,6 +251,51 @@ body {
             }
         }
         // Services
+        .page__services {
+            padding-top: 60px;
+            margin-bottom: 60px;
+            .services__title {
+                padding: 0 120px;
+                font-size: 52px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: 0.312px;
 
+                margin-bottom: 66px;
+            }
+            .services__items {
+                display: flex;
+                flex-flow: row wrap;
+                column-gap: 24px;
+                row-gap: 74px;
+                justify-content: center;
+                align-items: center;
+                .services__item {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 384px;
+
+                    & img {
+                        max-width: 384px;
+                        max-height: 360px;
+                    }
+                    .item__title {
+                        margin-top: 24px;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: 0.144px;
+                    }
+                    .item__subtitle {
+                        margin-top: 16px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0.096px;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }  
     }
 }

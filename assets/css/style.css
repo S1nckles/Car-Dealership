@@ -272,3 +272,63 @@ body {
 .page .page__container .page__rent .rent__cars .rent__car .rent__discover:hover {
   border-bottom: 3px solid #FFF;
 }
+.page .page__container .page__services {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.page .page__container .page__services .services__title {
+  padding: 0 120px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.312px;
+  margin-bottom: 66px;
+}
+.page .page__container .page__services .services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 74px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page .page__container .page__services .services__items .services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 384px;
+}
+.page .page__container .page__services .services__items .services__item img {
+  max-width: 384px;
+  max-height: 360px;
+}
+.page .page__container .page__services .services__items .services__item .item__title {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.144px;
+}
+.page .page__container .page__services .services__items .services__item .item__subtitle {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.096px;
+  opacity: 0.8;
+}
