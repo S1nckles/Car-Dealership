@@ -184,11 +184,13 @@ body {
     }
 }
 
-//-- Rent -------------------------------------
+//-- Page -------------------------------------
 
 .page {
     .page__container {
+        // Rent
         .page__rent {
+            margin-bottom: 60px;
             .rent__title {
                 color: #FFF;
                 text-align: center;
@@ -248,5 +250,7 @@ body {
                 }
             }
         }
+        // Services
+
     }
 }
