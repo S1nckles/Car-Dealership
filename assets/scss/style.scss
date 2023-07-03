@@ -375,24 +375,22 @@ body {
                 }
             }
         }   
+        // Location 
+        .page__location {
+            width: 100%;
+            margin: 102px 0;
+            .location__title {
+                text-align: center;
+                font-size: 52px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: 0.312px;
+            }
+            .location {
+                padding-top: 40px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
     } 
-}
-
-//-- Location -------------------------------------
-
-.page__location {
-    width: 100%;
-    margin: 102px 0;
-}
-.location__title {
-    text-align: center;
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0.312px;
-}
-.location {
-    padding-top: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
 }

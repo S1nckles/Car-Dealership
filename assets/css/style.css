@@ -414,21 +414,18 @@ body {
 .page .page__container .page__places .places__items .places__item .item__content .item__search a:hover {
   text-decoration: underline;
 }
-
-.page__location {
+.page .page__container .page__location {
   width: 100%;
   margin: 102px 0;
 }
-
-.location__title {
+.page .page__container .page__location .location__title {
   text-align: center;
   font-size: 52px;
   font-weight: 700;
   line-height: 64px;
   letter-spacing: 0.312px;
 }
-
-.location {
+.page .page__container .page__location .location {
   padding-top: 40px;
   max-width: 1200px;
   margin: 0 auto;
