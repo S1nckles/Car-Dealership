@@ -2,6 +2,11 @@
 $primary-color: #EE8313;
 
 //-- Hero -------------------------------------
+@media(min-width: 1440.98px ) {
+    .hero__hero .hero__img img {
+        right: -300px;
+    }
+}
 @media(max-width: 1279.98px) {
     .hero__hero .hero__img img {
         width: 650px;
