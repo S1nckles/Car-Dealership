@@ -233,7 +233,7 @@ $primary-color: #EE8313;
 @media(max-width: 767.98px) {
     .page .page__container .page__services .services__title {
         padding: 0;
-        font-size: 52px;
+        font-size: 38px;
         text-align: center;
     }
 }
@@ -253,5 +253,38 @@ $primary-color: #EE8313;
     }
     .page .page__container .page__services .services__items .services__item img {
         max-width: 300px;
+    }
+}
+
+// Places
+
+@media (max-width: 768px) {
+    .page .page__container .page__places .places__title {
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
+@media(max-width: 424.98px) {
+    .page .page__container .page__places .places__items .places__item {
+        max-width: 360px;
+        & img {
+            max-width: 360px;            
+        }
+    }
+}
+@media(max-width: 374.98px) {
+    .page .page__container .page__places { 
+        .places__title {
+            font-size: 28px;
+            line-height: 45px;
+        }
+        .places__items {
+            .places__item {
+                max-width: 300px;
+                & img {
+                    max-width: 300px;            
+                }
+            }
+        }
     }
 }
