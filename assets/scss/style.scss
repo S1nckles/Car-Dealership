@@ -4,6 +4,31 @@
 
 $primary-color: #EE8313;
 
+%global-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.312px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+}
+%item-title {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.144px;
+}
+%item-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.096px;
+    opacity: 0.8;
+}
+
 html {
     overflow: hidden;
 }
@@ -192,15 +217,7 @@ body {
         .page__rent {
             margin-bottom: 60px;
             .rent__title {
-                color: #FFF;
-                text-align: center;
-                font-size: 52px;
-                font-weight: 700;
-                line-height: 64px;
-                letter-spacing: 0.312px;
-
-                margin-bottom: 40px;
-                padding-top: 60px;
+                @extend %global-title;
             }
             .rent__cars {
                 display: flex;
@@ -280,22 +297,83 @@ body {
                         max-height: 360px;
                     }
                     .item__title {
-                        margin-top: 24px;
-                        font-size: 24px;
-                        font-weight: 700;
-                        line-height: 32px;
-                        letter-spacing: 0.144px;
+                        @extend %item-title;
                     }
                     .item__subtitle {
                         margin-top: 16px;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 28px;
-                        letter-spacing: 0.096px;
-                        opacity: 0.8;
+                        @extend %item-subtitle;
                     }
                 }
             }
-        }  
-    }
+        }
+        // Places
+        .page__places {
+            margin-bottom: 60px;
+            .places__title {
+                @extend %global-title;
+                max-width: 591px;
+                margin: 0 auto 40px auto;
+            }
+            .places__items {
+                display: flex;            
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 24px;
+
+                .places__item {
+                    max-width: 384px;
+                    border: 1px solid #171717;
+                    background-color: #131313;
+                    & img {
+                        max-width: 384px;
+                        max-height: 256px;
+                    }
+                    .item__content {
+                        padding:24px;
+
+                        .item__title {
+                            @extend %item-title;
+                            color: #fff;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        .item__subtitle {
+                            margin-top: 10px;
+                            @extend %item-subtitle;
+                        }
+                        .item__cost {
+                            margin-top: 25px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            column-gap: 10px;
+                            
+                            span {
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 28px;
+                                letter-spacing: 0.066px;
+                            }
+                        }
+                        .item__search {
+                            margin-top: 17px;
+                            a {
+                                color: $primary-color;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 28px;
+                                letter-spacing: 0.066px;
+                                
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    } 
 }

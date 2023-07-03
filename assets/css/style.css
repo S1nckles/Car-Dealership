@@ -1,5 +1,32 @@
 @import url("null.css");
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700&family=Manrope:wght@700&display=swap");
+.page .page__container .page__places .places__title, .page .page__container .page__rent .rent__title {
+  color: #FFF;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.312px;
+  margin-bottom: 40px;
+  padding-top: 60px;
+}
+
+.page .page__container .page__places .places__items .places__item .item__content .item__title, .page .page__container .page__services .services__items .services__item .item__title {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.144px;
+}
+
+.page .page__container .page__places .places__items .places__item .item__content .item__subtitle, .page .page__container .page__services .services__items .services__item .item__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.096px;
+  opacity: 0.8;
+}
+
 html {
   overflow: hidden;
 }
@@ -212,16 +239,6 @@ body {
 .page .page__container .page__rent {
   margin-bottom: 60px;
 }
-.page .page__container .page__rent .rent__title {
-  color: #FFF;
-  text-align: center;
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 64px;
-  letter-spacing: 0.312px;
-  margin-bottom: 40px;
-  padding-top: 60px;
-}
 .page .page__container .page__rent .rent__cars {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,18 +334,83 @@ body {
   max-width: 384px;
   max-height: 360px;
 }
-.page .page__container .page__services .services__items .services__item .item__title {
-  margin-top: 24px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: 0.144px;
-}
 .page .page__container .page__services .services__items .services__item .item__subtitle {
   margin-top: 16px;
+}
+.page .page__container .page__places {
+  margin-bottom: 60px;
+}
+.page .page__container .page__places .places__title {
+  max-width: 591px;
+  margin: 0 auto 40px auto;
+}
+.page .page__container .page__places .places__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+}
+.page .page__container .page__places .places__items .places__item {
+  max-width: 384px;
+  border: 1px solid #171717;
+  background-color: #131313;
+}
+.page .page__container .page__places .places__items .places__item img {
+  max-width: 384px;
+  max-height: 256px;
+}
+.page .page__container .page__places .places__items .places__item .item__content {
+  padding: 24px;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__title {
+  color: #fff;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__title:hover {
+  text-decoration: underline;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__subtitle {
+  margin-top: 10px;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__cost {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__cost span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.066px;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__search {
+  margin-top: 17px;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__search a {
+  color: #EE8313;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0.096px;
-  opacity: 0.8;
+  letter-spacing: 0.066px;
+}
+.page .page__container .page__places .places__items .places__item .item__content .item__search a:hover {
+  text-decoration: underline;
 }
