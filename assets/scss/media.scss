@@ -165,12 +165,12 @@ $primary-color: #EE8313;
 
 //-- Rent -------------------------------------
 
-@media(max-width: 1024.98px) {
+@media(max-width: 1023.98px) {   
     .page .page__container .page__rent .rent__cars .rent__car img {
-        max-width: 475px;
+        max-width: 300px;
     }
 }
-@media(max-width: 767.98px) {
+@media(max-width: 766.98px) {
     .page .page__container .page__rent {
         .rent__title {
             font-size: 42px;
@@ -235,6 +235,18 @@ $primary-color: #EE8313;
 
 //-- Services -------------------------------------
 
+@media(max-width: 1023.98px) {
+    .page .page__container .page__services .services__items .services__item {
+        max-width: 250px;
+    }
+    .page .page__container .page__services .services__items {
+        align-items: flex-start;
+    }
+    .page .page__container .page__services .services__items .services__item img {
+        max-width: 250px;
+    }
+    
+}
 @media(max-width: 767.98px) {
     .page .page__container .page__services .services__title {
         padding: 0;
@@ -261,8 +273,16 @@ $primary-color: #EE8313;
     }
 }
 
-// Places
+//-- Places -------------------------------------
 
+@media (max-width: 1023.98px) {
+    .page .page__container .page__places .places__items .places__item {
+        max-width: 300px;
+        img {
+            max-width: 300px;
+        }
+    } 
+}
 @media (max-width: 768px) {
     .page .page__container .page__places .places__title {
         font-size: 32px;
@@ -288,6 +308,102 @@ $primary-color: #EE8313;
                 max-width: 300px;
                 & img {
                     max-width: 300px;            
+                }
+            }
+        }
+    }
+}
+
+//-- Footer -------------------------------------
+
+@media(max-width: 1024.98px) {
+    .footer {
+        .footer__container {
+            flex-direction: column;
+            gap: 92px;
+            .footer__preview {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                .preview__title {
+                    padding-top: 0;
+                }
+            }
+            .footer-content {
+                justify-content: center;
+            }
+        }
+    }
+}
+@media(max-width: 767.98px) {
+    .footer {
+        .footer__container {
+            .footer__preview {
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                gap: 50px;
+                .preview__title {
+                    max-width: 190px;
+                    font-size: 16px;
+                }
+            }
+            .footer-content {
+                align-items: center;
+                gap: 75px;
+                flex-direction: column;
+                .footer__nav {
+                    gap: 30px;
+                    .nav__block .nav__links .nav__link a {
+                        font-size: 14px;
+                    }
+                }
+                .footer__socials {
+                    gap: 100px;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .social-2 {
+                        margin-top: 0;
+                    }
+                    .social-3 {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 424.98px) {
+    .footer {
+        .footer__container {
+            gap: 65px;
+            .footer__preview {
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 10px;
+                .preview__title {
+                    font-size: 17px;
+                    text-align: center;
+                    max-width: 235px;
+                }
+            }
+            .footer-content { 
+                .footer__nav {
+                    gap: 50px;
+                    justify-content: center;
+                    .nav__block {
+                        .nav-block__title {
+                            text-align: center;
+                        }
+                        .nav__links {
+                            align-items: center;
+                        } 
+                    }
+                }
+                .footer__socials {
+                    gap: 50px;
                 }
             }
         }
